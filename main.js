@@ -1,6 +1,7 @@
-console.log('main.js有載入');
 import './assets/scss/all.scss';
-import "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+import * as bootstrap from "bootstrap";
+// import "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+console.log('main.js有載入');
 
 // 訂單明細 下拉式選單Icon切換
 const arrorIcons = document.querySelectorAll("[data-bs-toggle='collapse']");
@@ -29,6 +30,8 @@ const radioShip711 = document.querySelector("#radioShip711");
 const store711Info = document.querySelector("#store711Info");
 
 const changeShipRadio = () => {
+  console.log("切換寄送方式");
+
   if(radioShipHome.checked === true){
     shipInfo.classList.remove("d-none");
     shipInfo.classList.add("d-block");
@@ -40,10 +43,11 @@ const changeShipRadio = () => {
   }
 };
 
-// changeShipRadio();
+changeShipRadio();
 
 if (radioShipHome && radioShip711) {
   radioShipHome.addEventListener("change", changeShipRadio);
   radioShip711.addEventListener("change", changeShipRadio);
 }
+
 
