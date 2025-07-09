@@ -5,7 +5,7 @@
 目前以 Bootstrap 5 + SCSS 完成三個購物流程頁面切版，  
 後續將整合至 React + API 的正式開發中
 
-#### 🔗 DEMO 預覽連結：https://your-deployment-link.com 
+#### 🔗 DEMO 預覽連結：https://lotte-syu.github.io/Vite-ISLA-Cart/index.html
 
 
 ## 🔧 使用技術
